@@ -9,7 +9,6 @@ export function App() {
     <Router>
       <Nav />
       <Routes>
-        {/* <Route path="*" element={<NotFound />} /> */}
         <Route index path="/" element={<Home />} />
 
         <Route path="/home" element={<Home />} />
