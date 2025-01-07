@@ -4,13 +4,13 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./componants/Nav";
+
 export function App() {
   return (
-    <Router>
+    <Router basename="/projectreact">
       <Nav />
       <Routes>
-        <Route index path="/" element={<Home />} />
-
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
